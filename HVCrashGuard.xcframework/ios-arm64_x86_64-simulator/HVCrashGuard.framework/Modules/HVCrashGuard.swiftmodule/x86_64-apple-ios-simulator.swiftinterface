@@ -1,0 +1,298 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 effective-4.1.50 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name HVCrashGuard
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import HVCrashGuard
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@frozen public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+extension HVCrashGuard.AnyCodable : HVCrashGuard._AnyEncodable, HVCrashGuard._AnyDecodable {
+}
+extension HVCrashGuard.AnyCodable : Swift.Equatable {
+  public static func == (lhs: HVCrashGuard.AnyCodable, rhs: HVCrashGuard.AnyCodable) -> Swift.Bool
+}
+extension HVCrashGuard.AnyCodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension HVCrashGuard.AnyCodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension HVCrashGuard.AnyCodable : Swift.ExpressibleByNilLiteral {
+}
+extension HVCrashGuard.AnyCodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension HVCrashGuard.AnyCodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension HVCrashGuard.AnyCodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension HVCrashGuard.AnyCodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension HVCrashGuard.AnyCodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension HVCrashGuard.AnyCodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension HVCrashGuard.AnyCodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public struct AnyDecodable : Swift.Decodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyDecodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension HVCrashGuard.AnyDecodable : HVCrashGuard._AnyDecodable {
+}
+extension HVCrashGuard._AnyDecodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension HVCrashGuard.AnyDecodable : Swift.Equatable {
+  public static func == (lhs: HVCrashGuard.AnyDecodable, rhs: HVCrashGuard.AnyDecodable) -> Swift.Bool
+}
+extension HVCrashGuard.AnyDecodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension HVCrashGuard.AnyDecodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension HVCrashGuard.AnyDecodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public struct AnyEncodable : Swift.Encodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyEncodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension HVCrashGuard.AnyEncodable : HVCrashGuard._AnyEncodable {
+}
+extension HVCrashGuard._AnyEncodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension HVCrashGuard.AnyEncodable : Swift.Equatable {
+  public static func == (lhs: HVCrashGuard.AnyEncodable, rhs: HVCrashGuard.AnyEncodable) -> Swift.Bool
+}
+extension HVCrashGuard.AnyEncodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension HVCrashGuard.AnyEncodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByNilLiteral {
+}
+extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByStringInterpolation {
+  public typealias StringInterpolation = Swift.DefaultStringInterpolation
+}
+extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension HVCrashGuard._AnyEncodable {
+  public init(nilLiteral _: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+}
+extension HVCrashGuard.AnyEncodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class APIService {
+  public static let shared: HVCrashGuard.APIService
+  @objc deinit
+}
+public enum SentryLevel : Swift.String, Swift.Codable {
+  case none, debug, info, warning, error, fatal
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SentryTimestamp : Swift.Codable {
+  public var date: Foundation.Date
+  public init(_ date: Foundation.Date = Date())
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct SentryFrame : Swift.Codable {
+  public var symbolAddress: Swift.String?
+  public var fileName: Swift.String?
+  public var function: Swift.String?
+  public var module: Swift.String?
+  public var package: Swift.String?
+  public var imageAddress: Swift.String?
+  public var platform: Swift.String?
+  public var instructionAddress: Swift.String?
+  public var instruction: Swift.UInt64?
+  public var lineNumber: Swift.Int?
+  public var columnNumber: Swift.Int?
+  public var inApp: Swift.Bool?
+  public var stackStart: Swift.Bool?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SentryStacktrace : Swift.Codable {
+  public var frames: [HVCrashGuard.SentryFrame]
+  public var registers: [Swift.String : Swift.String]?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SentryThread : Swift.Codable {
+  public var id: Swift.Int?
+  public var name: Swift.String?
+  public var crashed: Swift.Bool?
+  public var current: Swift.Bool?
+  public var isMain: Swift.Bool?
+  public var stacktrace: HVCrashGuard.SentryStacktrace?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SentryNSError : Swift.Codable {
+  public var domain: Swift.String?
+  public var code: Swift.Int?
+  public var userInfo: [Swift.String : HVCrashGuard.AnyCodable]?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SentryMechanismMeta : Swift.Codable {
+  public var signal: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var machException: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var error: HVCrashGuard.SentryNSError?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SentryMechanism : Swift.Codable {
+  public var type: Swift.String
+  public var desc: Swift.String?
+  public var data: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var handled: Swift.Bool?
+  public var synthetic: Swift.Bool?
+  public var helpLink: Swift.String?
+  public var meta: HVCrashGuard.SentryMechanismMeta?
+  public init(type: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SentryException : Swift.Codable {
+  public var type: Swift.String
+  public var value: Swift.String
+  public var mechanism: HVCrashGuard.SentryMechanism?
+  public var threadId: Swift.Int?
+  public var stacktrace: HVCrashGuard.SentryStacktrace?
+  public init(type: Swift.String, value: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SentryDebugMeta : Swift.Codable {
+  public var type: Swift.String?
+  public var debugID: Swift.String?
+  public var imageVmAddress: Swift.String?
+  public var imageAddress: Swift.String?
+  public var imageSize: Swift.UInt64?
+  public var codeFile: Swift.String?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SentryEvent : Swift.Codable {
+  public var eventId: Swift.String
+  public var timestamp: HVCrashGuard.SentryTimestamp
+  public var level: HVCrashGuard.SentryLevel
+  public var platform: Swift.String
+  public var exceptions: [HVCrashGuard.SentryException]?
+  public var threads: [HVCrashGuard.SentryThread]?
+  public var debugMeta: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var dist: Swift.String?
+  public var environment: Swift.String?
+  public var releaseName: Swift.String?
+  public var context: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var tags: [Swift.String : Swift.String]?
+  public var extra: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var user: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var breadcrumbs: [HVCrashGuard.AnyCodable]?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class CrashReportConverter {
+  public static func convert(dict report: [Swift.String : Any]) -> HVCrashGuard.SentryEvent?
+  final public let SentryCrashSCAsyncMarker: Swift.UInt
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class HVCrashGuard : ObjectiveC.NSObject {
+  public static let shared: HVCrashGuard.HVCrashGuard
+  @objc public func enableCrashReporting(userInfo: [Swift.String : Any])
+  @objc public func stopCrashRecording()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension HVCrashGuard.SentryLevel : Swift.Equatable {}
+extension HVCrashGuard.SentryLevel : Swift.Hashable {}
+extension HVCrashGuard.SentryLevel : Swift.RawRepresentable {}
