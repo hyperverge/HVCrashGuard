@@ -21,7 +21,8 @@ Pod::Spec.new do |s|
     s.platform     = :ios
     s.ios.deployment_target  = '11.0'
     s.swift_version = '5.4'
-    cs.vendored_frameworks = 'HVCrashGuard.xcframework'
+    s.vendored_frameworks = 'HVCrashGuard.xcframework'
+    s.static_framework = true
    
 
 
