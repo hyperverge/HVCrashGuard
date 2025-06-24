@@ -1,0 +1,52 @@
+name: Release HVCrashGuard            # ← shown in the “Actions” tab
+
+on:
+  push:
+    branches: [ main ]                # auto-publish when main is updated
+  workflow_dispatch:                  # allow manual trigger
+    inputs:
+      version:
+        description: "SemVer to release (e.g. 1.2.3)"
+        required: true
+        type: string                  # →  github.event.inputs.version
+
+jobs:
+  release:
+    runs-on: macos-14                 # Xcode 15.2 pre-installed
+
+    steps:
+    # ─────────────────────────── checkout repo ─────────────────────────────
+    - uses: actions/checkout@v4
+
+    # decide which version to publish (manual input wins, fallback = secret)
+    - id: vars
+      run: |
+        VERSION="${{ github.event.inputs.version || secrets.HVCRASHGUARD_VERSION }}"
+        echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+    # ─────────────────────────── 1. lint podspec ───────────────────────────
+    - name: CocoaPods lint
+      env:
+        VERSION: ${{ steps.vars.outputs.version }}
+      run: pod spec lint HVCrashGuard.podspec --allow-warnings --verbose
+
+    # ──────────────────── 2. create & push git tag (if new) ────────────────
+    - name: Create and push tag
+      env:
+        VERSION: ${{ steps.vars.outputs.version }}
+      run: |
+        if git rev-parse "v$VERSION" >/dev/null 2>&1; then
+          echo "Tag v$VERSION already exists – skipping"; exit 0; fi
+        git tag "v$VERSION"
+        git push origin "v$VERSION"
+
+    # ────────────────────────── 3. pod trunk push ──────────────────────────
+    - name: Publish to CocoaPods trunk
+      env:
+        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+      run: pod trunk push HVCrashGuard.podspec --allow-warnings
+
+    # ───────────────────────────── 4. log nice ✅ ──────────────────────────
+    - name: Log success
+      run: echo "🎉 HVCrashGuard ${{ steps.vars.outputs.version }} released!"
+
