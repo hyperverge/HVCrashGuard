@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/HVCrashGuard-Swift.h</key>
 		<data>
-		taOJWawGyuYKTNpzA3tQvQhSSsU=
+		vd/jGwoqMVbJWEp+nQ+tH+x1ego=
 		</data>
 		<key>Headers/HVCrashGuard-umbrella.h</key>
 		<data>
@@ -354,43 +354,43 @@
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		STRL64pESnZB9QWAglwEvx+8YKo=
+		11D0nxgZHCpC6V1fuRTV33/OaeU=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		w4uUCNEbWk4CmwiYGFD9IBvjCJA=
+		a/ZxPADElsla5isDY6X0q2b2skk=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		U4JJMO3P1Es6NL4LMN93gchpYZE=
+		vEWnf+0O1rvsoPkd29thSREY9YU=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		w4uUCNEbWk4CmwiYGFD9IBvjCJA=
+		a/ZxPADElsla5isDY6X0q2b2skk=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pN6y1vOFR8kOfNA/zapdmFJvLKU=
+		c4YCXmmPc3/8m4GuLOuZSimlotM=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		STRL64pESnZB9QWAglwEvx+8YKo=
+		11D0nxgZHCpC6V1fuRTV33/OaeU=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fSSU+ZMTmaMR3Mbii4EF1CMR4hw=
+		CSXTovyPPLttpsZ7fXXtcjpsPsQ=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Z46bG+075o8eJtbvGSYTqhCmEwU=
+		Fyw54SS9XGvJGvqzXqYatFaxIKQ=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fSSU+ZMTmaMR3Mbii4EF1CMR4hw=
+		CSXTovyPPLttpsZ7fXXtcjpsPsQ=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FMZotSZ656jN3idKvT4ZEcCqM5Y=
+		fPAg7BYwTrEhS757USC6H3hEF6s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -601,11 +601,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			taOJWawGyuYKTNpzA3tQvQhSSsU=
+			vd/jGwoqMVbJWEp+nQ+tH+x1ego=
 			</data>
 			<key>hash2</key>
 			<data>
-			uDI2BQBBX65P/38zsryh8Ch4tM4Njj2a+xhakZ9uqfM=
+			m7PYut61+XqafPgCsWos7nMoL1soFzNU3uKFRjNJ2C8=
 			</data>
 		</dict>
 		<key>Headers/HVCrashGuard-umbrella.h</key>
@@ -1349,110 +1349,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			STRL64pESnZB9QWAglwEvx+8YKo=
+			11D0nxgZHCpC6V1fuRTV33/OaeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			hv7KzjJd68V0gCiI5+Te9ybXpv5Gm33XSAe8nA7V1wc=
+			GYFxQYO/bViiZdg7hRJN6HYW0TR493bwioa1At+VSNM=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w4uUCNEbWk4CmwiYGFD9IBvjCJA=
+			a/ZxPADElsla5isDY6X0q2b2skk=
 			</data>
 			<key>hash2</key>
 			<data>
-			L50fnZ7+aIk/76pfMcVoOMBuUTAfZ4rYc0K/nO1i4OQ=
+			3jjrYUtVb5qVEzbK/4jtAH+PkCvrzFDg9bSlgyRhSW0=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U4JJMO3P1Es6NL4LMN93gchpYZE=
+			vEWnf+0O1rvsoPkd29thSREY9YU=
 			</data>
 			<key>hash2</key>
 			<data>
-			5D4E9jYQsAty8+cJREeu3wEotreKidii6panqEbHmgg=
+			XeDnNGLge8emQFwlnm628lfQrcOh7LbRIau+cyU6D+E=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w4uUCNEbWk4CmwiYGFD9IBvjCJA=
+			a/ZxPADElsla5isDY6X0q2b2skk=
 			</data>
 			<key>hash2</key>
 			<data>
-			L50fnZ7+aIk/76pfMcVoOMBuUTAfZ4rYc0K/nO1i4OQ=
+			3jjrYUtVb5qVEzbK/4jtAH+PkCvrzFDg9bSlgyRhSW0=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pN6y1vOFR8kOfNA/zapdmFJvLKU=
+			c4YCXmmPc3/8m4GuLOuZSimlotM=
 			</data>
 			<key>hash2</key>
 			<data>
-			OsaGlcVoXBdhm/ntpf7K3kUXyAJU7SLLZd8nPnqUm0c=
+			Py1aiFTj0hm3uPMhijjCyKdOFEZGHVy0gnFB10bsF7U=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			STRL64pESnZB9QWAglwEvx+8YKo=
+			11D0nxgZHCpC6V1fuRTV33/OaeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			hv7KzjJd68V0gCiI5+Te9ybXpv5Gm33XSAe8nA7V1wc=
+			GYFxQYO/bViiZdg7hRJN6HYW0TR493bwioa1At+VSNM=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fSSU+ZMTmaMR3Mbii4EF1CMR4hw=
+			CSXTovyPPLttpsZ7fXXtcjpsPsQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			aL768BigLlsb/4WmjEfoa9o71jz0aOgr2vjmJ/nTRgQ=
+			da7YnowsMSmdO7YPFo6daAHAevmZ0Pc/jZ8GCGI99wo=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z46bG+075o8eJtbvGSYTqhCmEwU=
+			Fyw54SS9XGvJGvqzXqYatFaxIKQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			F/nBMe4p9+3Vk6ar0C730V0Xqw8AAau186TjZ1fAQtI=
+			aaaxotdAJ5Seq9Wfb5/3S2vZYQ7TsFWLzdOHLGZ03iM=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fSSU+ZMTmaMR3Mbii4EF1CMR4hw=
+			CSXTovyPPLttpsZ7fXXtcjpsPsQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			aL768BigLlsb/4WmjEfoa9o71jz0aOgr2vjmJ/nTRgQ=
+			da7YnowsMSmdO7YPFo6daAHAevmZ0Pc/jZ8GCGI99wo=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FMZotSZ656jN3idKvT4ZEcCqM5Y=
+			fPAg7BYwTrEhS757USC6H3hEF6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			1FEEq9TDg2LBbGK4CkAvxFRNJZ1i6/Gn1NDjbP6hyPg=
+			7FKBhMlr5nsjpWMP/5Ru33wnXQVSdO5crdsvlnNumvM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

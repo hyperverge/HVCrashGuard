@@ -8,55 +8,55 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@frozen public struct AnyCodable : Swift.Codable {
+@frozen public struct CrashAnyCodable : Swift.Codable {
   public let value: Any
   public init<T>(_ value: T?)
 }
-extension HVCrashGuard.AnyCodable : HVCrashGuard._AnyEncodable, HVCrashGuard._AnyDecodable {
+extension HVCrashGuard.CrashAnyCodable : HVCrashGuard._AnyEncodable, HVCrashGuard._AnyDecodable {
 }
-extension HVCrashGuard.AnyCodable : Swift.Equatable {
-  public static func == (lhs: HVCrashGuard.AnyCodable, rhs: HVCrashGuard.AnyCodable) -> Swift.Bool
+extension HVCrashGuard.CrashAnyCodable : Swift.Equatable {
+  public static func == (lhs: HVCrashGuard.CrashAnyCodable, rhs: HVCrashGuard.CrashAnyCodable) -> Swift.Bool
 }
-extension HVCrashGuard.AnyCodable : Swift.CustomStringConvertible {
+extension HVCrashGuard.CrashAnyCodable : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension HVCrashGuard.AnyCodable : Swift.CustomDebugStringConvertible {
+extension HVCrashGuard.CrashAnyCodable : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
 }
-extension HVCrashGuard.AnyCodable : Swift.ExpressibleByNilLiteral {
+extension HVCrashGuard.CrashAnyCodable : Swift.ExpressibleByNilLiteral {
 }
-extension HVCrashGuard.AnyCodable : Swift.ExpressibleByBooleanLiteral {
+extension HVCrashGuard.CrashAnyCodable : Swift.ExpressibleByBooleanLiteral {
   public typealias BooleanLiteralType = Swift.Bool
 }
-extension HVCrashGuard.AnyCodable : Swift.ExpressibleByIntegerLiteral {
+extension HVCrashGuard.CrashAnyCodable : Swift.ExpressibleByIntegerLiteral {
   public typealias IntegerLiteralType = Swift.Int
 }
-extension HVCrashGuard.AnyCodable : Swift.ExpressibleByFloatLiteral {
+extension HVCrashGuard.CrashAnyCodable : Swift.ExpressibleByFloatLiteral {
   public typealias FloatLiteralType = Swift.Double
 }
-extension HVCrashGuard.AnyCodable : Swift.ExpressibleByStringLiteral {
+extension HVCrashGuard.CrashAnyCodable : Swift.ExpressibleByStringLiteral {
   public typealias ExtendedGraphemeClusterLiteralType = Swift.String
   public typealias StringLiteralType = Swift.String
   public typealias UnicodeScalarLiteralType = Swift.String
 }
-extension HVCrashGuard.AnyCodable : Swift.ExpressibleByArrayLiteral {
+extension HVCrashGuard.CrashAnyCodable : Swift.ExpressibleByArrayLiteral {
   public typealias ArrayLiteralElement = Any
 }
-extension HVCrashGuard.AnyCodable : Swift.ExpressibleByDictionaryLiteral {
+extension HVCrashGuard.CrashAnyCodable : Swift.ExpressibleByDictionaryLiteral {
   public typealias Key = Swift.AnyHashable
   public typealias Value = Any
 }
-extension HVCrashGuard.AnyCodable : Swift.Hashable {
+extension HVCrashGuard.CrashAnyCodable : Swift.Hashable {
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-@frozen public struct AnyDecodable : Swift.Decodable {
+@frozen public struct CrashAnyDecodable : Swift.Decodable {
   public let value: Any
   public init<T>(_ value: T?)
 }
@@ -65,31 +65,31 @@ internal protocol _AnyDecodable {
   var value: Any { get }
   init<T>(_ value: T?)
 }
-extension HVCrashGuard.AnyDecodable : HVCrashGuard._AnyDecodable {
+extension HVCrashGuard.CrashAnyDecodable : HVCrashGuard._AnyDecodable {
 }
 extension HVCrashGuard._AnyDecodable {
   public init(from decoder: any Swift.Decoder) throws
 }
-extension HVCrashGuard.AnyDecodable : Swift.Equatable {
-  public static func == (lhs: HVCrashGuard.AnyDecodable, rhs: HVCrashGuard.AnyDecodable) -> Swift.Bool
+extension HVCrashGuard.CrashAnyDecodable : Swift.Equatable {
+  public static func == (lhs: HVCrashGuard.CrashAnyDecodable, rhs: HVCrashGuard.CrashAnyDecodable) -> Swift.Bool
 }
-extension HVCrashGuard.AnyDecodable : Swift.CustomStringConvertible {
+extension HVCrashGuard.CrashAnyDecodable : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension HVCrashGuard.AnyDecodable : Swift.CustomDebugStringConvertible {
+extension HVCrashGuard.CrashAnyDecodable : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
 }
-extension HVCrashGuard.AnyDecodable : Swift.Hashable {
+extension HVCrashGuard.CrashAnyDecodable : Swift.Hashable {
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-@frozen public struct AnyEncodable : Swift.Encodable {
+@frozen public struct CrashAnyEncodable : Swift.Encodable {
   public let value: Any
   public init<T>(_ value: T?)
 }
@@ -98,47 +98,47 @@ internal protocol _AnyEncodable {
   var value: Any { get }
   init<T>(_ value: T?)
 }
-extension HVCrashGuard.AnyEncodable : HVCrashGuard._AnyEncodable {
+extension HVCrashGuard.CrashAnyEncodable : HVCrashGuard._AnyEncodable {
 }
 extension HVCrashGuard._AnyEncodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
-extension HVCrashGuard.AnyEncodable : Swift.Equatable {
-  public static func == (lhs: HVCrashGuard.AnyEncodable, rhs: HVCrashGuard.AnyEncodable) -> Swift.Bool
+extension HVCrashGuard.CrashAnyEncodable : Swift.Equatable {
+  public static func == (lhs: HVCrashGuard.CrashAnyEncodable, rhs: HVCrashGuard.CrashAnyEncodable) -> Swift.Bool
 }
-extension HVCrashGuard.AnyEncodable : Swift.CustomStringConvertible {
+extension HVCrashGuard.CrashAnyEncodable : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension HVCrashGuard.AnyEncodable : Swift.CustomDebugStringConvertible {
+extension HVCrashGuard.CrashAnyEncodable : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
 }
-extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByNilLiteral {
+extension HVCrashGuard.CrashAnyEncodable : Swift.ExpressibleByNilLiteral {
 }
-extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByBooleanLiteral {
+extension HVCrashGuard.CrashAnyEncodable : Swift.ExpressibleByBooleanLiteral {
   public typealias BooleanLiteralType = Swift.Bool
 }
-extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByIntegerLiteral {
+extension HVCrashGuard.CrashAnyEncodable : Swift.ExpressibleByIntegerLiteral {
   public typealias IntegerLiteralType = Swift.Int
 }
-extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByFloatLiteral {
+extension HVCrashGuard.CrashAnyEncodable : Swift.ExpressibleByFloatLiteral {
   public typealias FloatLiteralType = Swift.Double
 }
-extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByStringLiteral {
+extension HVCrashGuard.CrashAnyEncodable : Swift.ExpressibleByStringLiteral {
   public typealias ExtendedGraphemeClusterLiteralType = Swift.String
   public typealias StringLiteralType = Swift.String
   public typealias UnicodeScalarLiteralType = Swift.String
 }
-extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByStringInterpolation {
+extension HVCrashGuard.CrashAnyEncodable : Swift.ExpressibleByStringInterpolation {
   public typealias StringInterpolation = Swift.DefaultStringInterpolation
 }
-extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByArrayLiteral {
+extension HVCrashGuard.CrashAnyEncodable : Swift.ExpressibleByArrayLiteral {
   public typealias ArrayLiteralElement = Any
 }
-extension HVCrashGuard.AnyEncodable : Swift.ExpressibleByDictionaryLiteral {
+extension HVCrashGuard.CrashAnyEncodable : Swift.ExpressibleByDictionaryLiteral {
   public typealias Key = Swift.AnyHashable
   public typealias Value = Any
 }
@@ -152,7 +152,7 @@ extension HVCrashGuard._AnyEncodable {
   public init(arrayLiteral elements: Any...)
   public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
 }
-extension HVCrashGuard.AnyEncodable : Swift.Hashable {
+extension HVCrashGuard.CrashAnyEncodable : Swift.Hashable {
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -215,14 +215,14 @@ public struct SentryThread : Swift.Codable {
 public struct SentryNSError : Swift.Codable {
   public var domain: Swift.String?
   public var code: Swift.Int?
-  public var userInfo: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var userInfo: [Swift.String : HVCrashGuard.CrashAnyCodable]?
   public init()
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct SentryMechanismMeta : Swift.Codable {
-  public var signal: [Swift.String : HVCrashGuard.AnyCodable]?
-  public var machException: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var signal: [Swift.String : HVCrashGuard.CrashAnyCodable]?
+  public var machException: [Swift.String : HVCrashGuard.CrashAnyCodable]?
   public var error: HVCrashGuard.SentryNSError?
   public init()
   public func encode(to encoder: any Swift.Encoder) throws
@@ -231,7 +231,7 @@ public struct SentryMechanismMeta : Swift.Codable {
 public struct SentryMechanism : Swift.Codable {
   public var type: Swift.String
   public var desc: Swift.String?
-  public var data: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var data: [Swift.String : HVCrashGuard.CrashAnyCodable]?
   public var handled: Swift.Bool?
   public var synthetic: Swift.Bool?
   public var helpLink: Swift.String?
@@ -268,15 +268,15 @@ public struct SentryEvent : Swift.Codable {
   public var platform: Swift.String
   public var exceptions: [HVCrashGuard.SentryException]?
   public var threads: [HVCrashGuard.SentryThread]?
-  public var debugMeta: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var debugMeta: [Swift.String : HVCrashGuard.CrashAnyCodable]?
   public var dist: Swift.String?
   public var environment: Swift.String?
   public var releaseName: Swift.String?
-  public var context: [Swift.String : HVCrashGuard.AnyCodable]?
+  public var context: [Swift.String : HVCrashGuard.CrashAnyCodable]?
   public var tags: [Swift.String : Swift.String]?
-  public var extra: [Swift.String : HVCrashGuard.AnyCodable]?
-  public var user: [Swift.String : HVCrashGuard.AnyCodable]?
-  public var breadcrumbs: [HVCrashGuard.AnyCodable]?
+  public var extra: [Swift.String : HVCrashGuard.CrashAnyCodable]?
+  public var user: [Swift.String : HVCrashGuard.CrashAnyCodable]?
+  public var breadcrumbs: [HVCrashGuard.CrashAnyCodable]?
   public init()
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -286,8 +286,8 @@ public struct SentryEvent : Swift.Codable {
   final public let SentryCrashSCAsyncMarker: Swift.UInt
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class HVCrashGuard : ObjectiveC.NSObject {
-  public static let shared: HVCrashGuard.HVCrashGuard
+@_inheritsConvenienceInitializers @objc public class HVCrashReporter : ObjectiveC.NSObject {
+  public static let shared: HVCrashGuard.HVCrashReporter
   @objc public func enableCrashReporting(userInfo: [Swift.String : Any])
   @objc public func stopCrashRecording()
   @objc override dynamic public init()

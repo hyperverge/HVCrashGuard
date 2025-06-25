@@ -301,8 +301,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSString;
 
-SWIFT_CLASS("_TtC12HVCrashGuard12HVCrashGuard")
-@interface HVCrashGuard : NSObject
+SWIFT_CLASS("_TtC12HVCrashGuard15HVCrashReporter")
+@interface HVCrashReporter : NSObject
 /// installs once, then only updates userInfo + monitor mask
 - (void)enableCrashReportingWithUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 /// when host app dismisses the SDK
@@ -621,8 +621,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSString;
 
-SWIFT_CLASS("_TtC12HVCrashGuard12HVCrashGuard")
-@interface HVCrashGuard : NSObject
+SWIFT_CLASS("_TtC12HVCrashGuard15HVCrashReporter")
+@interface HVCrashReporter : NSObject
 /// installs once, then only updates userInfo + monitor mask
 - (void)enableCrashReportingWithUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 /// when host app dismisses the SDK
