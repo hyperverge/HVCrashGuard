@@ -137,8 +137,7 @@ enum
     /** Required monitor options for essential operation. */
     HVCrashMonitorTypeRequired = (
                                   HVCrashMonitorTypeSystem |
-                                  HVCrashMonitorTypeApplicationState |
-                                  HVCrashMonitorTypeMemoryTermination
+                                  HVCrashMonitorTypeApplicationState
                                   ),
 
     /** Disable automatic reporting; only manual reports are allowed. */
