@@ -354,7 +354,7 @@
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		11D0nxgZHCpC6V1fuRTV33/OaeU=
+		aExdXfOIC2ZG0tVCG4FzXzFNie8=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -374,7 +374,7 @@
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		11D0nxgZHCpC6V1fuRTV33/OaeU=
+		aExdXfOIC2ZG0tVCG4FzXzFNie8=
 		</data>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -1349,11 +1349,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			11D0nxgZHCpC6V1fuRTV33/OaeU=
+			aExdXfOIC2ZG0tVCG4FzXzFNie8=
 			</data>
 			<key>hash2</key>
 			<data>
-			GYFxQYO/bViiZdg7hRJN6HYW0TR493bwioa1At+VSNM=
+			7oBWiHvSSNufLLEguKhG4urw98RevczkfFj4TO1uAkY=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1404,11 +1404,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			11D0nxgZHCpC6V1fuRTV33/OaeU=
+			aExdXfOIC2ZG0tVCG4FzXzFNie8=
 			</data>
 			<key>hash2</key>
 			<data>
-			GYFxQYO/bViiZdg7hRJN6HYW0TR493bwioa1At+VSNM=
+			7oBWiHvSSNufLLEguKhG4urw98RevczkfFj4TO1uAkY=
 			</data>
 		</dict>
 		<key>Modules/HVCrashGuard.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
