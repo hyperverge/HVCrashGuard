@@ -2,7 +2,6 @@ Pod::Spec.new do |s|
   s.name             = 'HVCrashGuard'
   s.version          = '1.0.1'
 
-  # ≤ 140 chars
   s.summary          = 'HyperVerge’s internal iOS crash-reporting framework.'
   s.description      = <<-DESC
     HVCrashGuard captures, stores, and forwards crash reports produced inside
@@ -15,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.source           = {
     :git => 'https://github.com/hyperverge/HVCrashGuard.git',
-    :tag => s.version.to_s
+     :tag => "#{s.version}"
   }
 
   s.static_framework = true
