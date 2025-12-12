@@ -8,7 +8,6 @@ let package = Package(
     products: [
         .library(
             name: "HVCrashGuard",
-            type: .static,
             targets: ["HVCrashGuard"]
         )
     ],
