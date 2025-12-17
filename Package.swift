@@ -8,6 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "HVCrashGuard",
+            type: .static,
             targets: ["HVCrashGuard"]
         )
     ],
@@ -16,7 +17,7 @@ let package = Package(
         .binaryTarget(
             name: "HVCrashGuard",
             url: "https://hvsdk.s3.ap-south-1.amazonaws.com/ios/release/hvcrashguard/2.0.0/HVCrashGuard-2.0.0-XCFramework.zip",
-            checksum: "99293ace371d1cd7778e97cb46730416b4f87ba408e33bcfb5447180989f66ee"
+            checksum: "45114278007e36c475badc56e7c4e05d18c8628c2686db99be1fbb8b61585f58"
         )
     ]
 )
