@@ -1,9 +1,101 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "HVCrashGuard",
+    "printedName": "HVCrashGuard",
     "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "HVCrashGuard",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIService",
+        "printedName": "APIService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIService",
+                "printedName": "HVCrashGuard.APIService",
+                "usr": "s:12HVCrashGuard10APIServiceC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12HVCrashGuard10APIServiceC6sharedACvpZ",
+            "mangledName": "$s12HVCrashGuard10APIServiceC6sharedACvpZ",
+            "moduleName": "HVCrashGuard",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIService",
+                    "printedName": "HVCrashGuard.APIService",
+                    "usr": "s:12HVCrashGuard10APIServiceC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12HVCrashGuard10APIServiceC6sharedACvgZ",
+                "mangledName": "$s12HVCrashGuard10APIServiceC6sharedACvgZ",
+                "moduleName": "HVCrashGuard",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12HVCrashGuard10APIServiceC",
+        "mangledName": "$s12HVCrashGuard10APIServiceC",
+        "moduleName": "HVCrashGuard",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
       {
         "kind": "TypeDecl",
         "name": "CrashAnyCodable",
@@ -290,6 +382,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -837,6 +943,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -971,7 +1091,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -995,6 +1115,22 @@
         "moduleName": "HVCrashGuard",
         "declAttributes": [
           "UsableFromInline"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1290,6 +1426,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -1642,7 +1792,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -1924,6 +2074,22 @@
         "moduleName": "HVCrashGuard",
         "declAttributes": [
           "UsableFromInline"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1938,26 +2104,76 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "APIService",
-        "printedName": "APIService",
+        "name": "CrashReportConverter",
+        "printedName": "CrashReportConverter",
         "children": [
           {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
+            "kind": "Function",
+            "name": "convert",
+            "printedName": "convert(dict:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "APIService",
-                "printedName": "HVCrashGuard.APIService",
-                "usr": "s:12HVCrashGuard10APIServiceC"
+                "name": "Optional",
+                "printedName": "HVCrashGuard.SentryEvent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SentryEvent",
+                    "printedName": "HVCrashGuard.SentryEvent",
+                    "usr": "s:12HVCrashGuard11SentryEventV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12HVCrashGuard20CrashReportConverterC7convert4dictAA11SentryEventVSgSDySSypG_tFZ",
+            "mangledName": "$s12HVCrashGuard20CrashReportConverterC7convert4dictAA11SentryEventVSgSDySSypG_tFZ",
+            "moduleName": "HVCrashGuard",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "SentryCrashSCAsyncMarker",
+            "printedName": "SentryCrashSCAsyncMarker",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12HVCrashGuard10APIServiceC6sharedACvpZ",
-            "mangledName": "$s12HVCrashGuard10APIServiceC6sharedACvpZ",
+            "usr": "s:12HVCrashGuard20CrashReportConverterC06SentryC13SCAsyncMarkerSuvp",
+            "mangledName": "$s12HVCrashGuard20CrashReportConverterC06SentryC13SCAsyncMarkerSuvp",
             "moduleName": "HVCrashGuard",
-            "static": true,
             "declAttributes": [
               "HasInitialValue",
               "Final",
@@ -1974,16 +2190,15 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "APIService",
-                    "printedName": "HVCrashGuard.APIService",
-                    "usr": "s:12HVCrashGuard10APIServiceC"
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12HVCrashGuard10APIServiceC6sharedACvgZ",
-                "mangledName": "$s12HVCrashGuard10APIServiceC6sharedACvgZ",
+                "usr": "s:12HVCrashGuard20CrashReportConverterC06SentryC13SCAsyncMarkerSuvg",
+                "mangledName": "$s12HVCrashGuard20CrashReportConverterC06SentryC13SCAsyncMarkerSuvg",
                 "moduleName": "HVCrashGuard",
-                "static": true,
                 "implicit": true,
                 "declAttributes": [
                   "Final"
@@ -1994,13 +2209,29 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:12HVCrashGuard10APIServiceC",
-        "mangledName": "$s12HVCrashGuard10APIServiceC",
+        "usr": "s:12HVCrashGuard20CrashReportConverterC",
+        "mangledName": "$s12HVCrashGuard20CrashReportConverterC",
         "moduleName": "HVCrashGuard",
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2324,6 +2555,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2506,7 +2751,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -2533,7 +2778,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -2557,6 +2802,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -4043,7 +4302,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -4068,7 +4327,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -4090,6 +4349,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -4408,7 +4681,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -4433,7 +4706,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -4454,6 +4727,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -5170,7 +5457,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -5195,7 +5482,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -5217,6 +5504,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -5645,7 +5946,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -5670,7 +5971,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -5692,6 +5993,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -6162,7 +6477,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -6187,7 +6502,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -6208,6 +6523,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -7057,7 +7386,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -7082,7 +7411,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -7103,6 +7432,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -7671,7 +8014,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -7696,7 +8039,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -7718,6 +8061,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -8434,7 +8791,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -8459,7 +8816,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -8481,6 +8838,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -10373,7 +10744,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -10398,7 +10769,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -10422,6 +10793,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -10435,131 +10820,6 @@
             "mangledName": "$sSE"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "HVCrashGuard",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CrashReportConverter",
-        "printedName": "CrashReportConverter",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "convert",
-            "printedName": "convert(dict:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "HVCrashGuard.SentryEvent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SentryEvent",
-                    "printedName": "HVCrashGuard.SentryEvent",
-                    "usr": "s:12HVCrashGuard11SentryEventV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12HVCrashGuard20CrashReportConverterC7convert4dictAA11SentryEventVSgSDySSypG_tFZ",
-            "mangledName": "$s12HVCrashGuard20CrashReportConverterC7convert4dictAA11SentryEventVSgSDySSypG_tFZ",
-            "moduleName": "HVCrashGuard",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "SentryCrashSCAsyncMarker",
-            "printedName": "SentryCrashSCAsyncMarker",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12HVCrashGuard20CrashReportConverterC06SentryC13SCAsyncMarkerSuvp",
-            "mangledName": "$s12HVCrashGuard20CrashReportConverterC06SentryC13SCAsyncMarkerSuvp",
-            "moduleName": "HVCrashGuard",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt",
-                    "printedName": "Swift.UInt",
-                    "usr": "s:Su"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12HVCrashGuard20CrashReportConverterC06SentryC13SCAsyncMarkerSuvg",
-                "mangledName": "$s12HVCrashGuard20CrashReportConverterC06SentryC13SCAsyncMarkerSuvg",
-                "moduleName": "HVCrashGuard",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:12HVCrashGuard20CrashReportConverterC",
-        "mangledName": "$s12HVCrashGuard20CrashReportConverterC",
-        "moduleName": "HVCrashGuard",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -10672,6 +10932,48 @@
           },
           {
             "kind": "Function",
+            "name": "setTag",
+            "printedName": "setTag(userInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HVCrashGuard@objc(cs)HVCrashReporter(im)setTagWithUserInfo:",
+            "mangledName": "$s12HVCrashGuard0A8ReporterC6setTag8userInfoySDySSypG_tF",
+            "moduleName": "HVCrashGuard",
+            "objc_name": "setTagWithUserInfo:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "stopCrashRecording",
             "printedName": "stopCrashRecording()",
             "children": [
@@ -10735,6 +11037,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10789,2860 +11105,228 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyCodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 841,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyCodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2178,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyCodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2756,
-      "length": 39,
-      "value": "\"AnyCodable(\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyCodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2793,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyCodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2832,
-      "length": 28,
-      "value": "\"AnyCodable(\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyCodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2858,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyDecodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2323,
-      "length": 38,
-      "value": "\"AnyDecodable value cannot be decoded\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyDecodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2644,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyDecodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3996,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyDecodable.swift",
-      "kind": "StringLiteral",
-      "offset": 4578,
-      "length": 41,
-      "value": "\"AnyDecodable(\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyDecodable.swift",
-      "kind": "StringLiteral",
-      "offset": 4617,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyDecodable.swift",
-      "kind": "StringLiteral",
-      "offset": 4656,
-      "length": 30,
-      "value": "\"AnyDecodable(\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyDecodable.swift",
-      "kind": "StringLiteral",
-      "offset": 4684,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3197,
-      "length": 38,
-      "value": "\"AnyEncodable value cannot be encoded\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3540,
-      "length": 3,
-      "value": "\"B\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3611,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3682,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3754,
-      "length": 3,
-      "value": "\"i\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3759,
-      "length": 3,
-      "value": "\"l\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3831,
-      "length": 3,
-      "value": "\"q\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3903,
-      "length": 3,
-      "value": "\"C\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3975,
-      "length": 3,
-      "value": "\"S\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 4048,
-      "length": 3,
-      "value": "\"I\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 4053,
-      "length": 3,
-      "value": "\"L\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 4126,
-      "length": 3,
-      "value": "\"Q\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 4199,
-      "length": 3,
-      "value": "\"f\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 4271,
-      "length": 3,
-      "value": "\"d\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 4448,
-      "length": 60,
-      "value": "\"NSNumber cannot be encoded because its type is not handled\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4819,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6164,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 6746,
-      "length": 41,
-      "value": "\"AnyEncodable(\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 6785,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 6824,
-      "length": 30,
-      "value": "\"AnyEncodable(\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/AnyCodable\/CrashAnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 6852,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 416,
-      "length": 87,
-      "value": "\"https:\/\/4123a81bae4aef27e56920466b6c8d9e@o435277.ingest.us.sentry.io\/4508929338769408\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 931,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1194,
-      "length": 7,
-      "value": "\"https\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1271,
-      "length": 29,
-      "value": "\"\/api\/\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1289,
-      "length": 1,
-      "value": "\"\/envelope\/\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1359,
-      "length": 12,
-      "value": "\"sentry_key\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1420,
-      "length": 15,
-      "value": "\"sentry_client\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1445,
-      "length": 14,
-      "value": "\"hyperkyc\/1.0\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1486,
-      "length": 16,
-      "value": "\"sentry_version\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1511,
-      "length": 3,
-      "value": "\"7\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1622,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2036,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 2459,
-      "length": 5,
-      "value": "\"dsn\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 2488,
-      "length": 9,
-      "value": "\"sent_at\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 2614,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 2631,
-      "length": 7,
-      "value": "\"event\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 2652,
-      "length": 14,
-      "value": "\"content_type\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 2669,
-      "length": 18,
-      "value": "\"application\/json\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 2701,
-      "length": 8,
-      "value": "\"length\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2860,
-      "length": 4,
-      "value": "0x0A"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2946,
-      "length": 4,
-      "value": "0x0A"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3011,
-      "length": 4,
-      "value": "0x0A"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 3263,
-      "length": 6,
-      "value": "\"POST\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 3291,
-      "length": 31,
-      "value": "\"application\/x-sentry-envelope\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "StringLiteral",
-      "offset": 3344,
-      "length": 14,
-      "value": "\"Content-Type\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3600,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3761,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3815,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/APIService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3821,
-      "length": 3,
-      "value": "299"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1693,
-      "length": 13,
-      "value": "\"symbol_addr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1731,
-      "length": 10,
-      "value": "\"filename\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1810,
-      "length": 8,
-      "value": "\"lineno\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1847,
-      "length": 7,
-      "value": "\"colno\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1904,
-      "length": 12,
-      "value": "\"image_addr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1951,
-      "length": 18,
-      "value": "\"instruction_addr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 2013,
-      "length": 8,
-      "value": "\"in_app\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 2048,
-      "length": 13,
-      "value": "\"stack_start\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1693,
-      "length": 13,
-      "value": "\"symbol_addr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1731,
-      "length": 10,
-      "value": "\"filename\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1810,
-      "length": 8,
-      "value": "\"lineno\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1847,
-      "length": 7,
-      "value": "\"colno\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1904,
-      "length": 12,
-      "value": "\"image_addr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 1951,
-      "length": 18,
-      "value": "\"instruction_addr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 2013,
-      "length": 8,
-      "value": "\"in_app\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 2048,
-      "length": 13,
-      "value": "\"stack_start\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "Array",
-      "offset": 2174,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 2880,
-      "length": 6,
-      "value": "\"main\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 2880,
-      "length": 6,
-      "value": "\"main\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 3540,
-      "length": 10,
-      "value": "\"ns_error\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 3580,
-      "length": 16,
-      "value": "\"mach_exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 3540,
-      "length": 10,
-      "value": "\"ns_error\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 3580,
-      "length": 16,
-      "value": "\"mach_exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 4046,
-      "length": 11,
-      "value": "\"help_link\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 4046,
-      "length": 11,
-      "value": "\"help_link\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 4619,
-      "length": 11,
-      "value": "\"thread_id\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 4619,
-      "length": 11,
-      "value": "\"thread_id\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 5454,
-      "length": 7,
-      "value": "\"appId\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 5505,
-      "length": 8,
-      "value": "\"appKey\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 5562,
-      "length": 13,
-      "value": "\"accessToken\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 5623,
-      "length": 12,
-      "value": "\"workflowId\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 5686,
-      "length": 15,
-      "value": "\"transactionId\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 5747,
-      "length": 10,
-      "value": "\"metadata\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 5882,
-      "length": 10,
-      "value": "\"hv_appId\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 5922,
-      "length": 11,
-      "value": "\"hv_appKey\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 5963,
-      "length": 16,
-      "value": "\"hv_accessToken\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 6009,
-      "length": 15,
-      "value": "\"hv_workflowId\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 6054,
-      "length": 18,
-      "value": "\"hv_transactionId\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 6534,
-      "length": 6,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 6539,
-      "length": 12,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 6850,
-      "length": 7,
-      "value": "\"macho\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7115,
-      "length": 10,
-      "value": "\"debug_id\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7156,
-      "length": 14,
-      "value": "\"image_vmaddr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7199,
-      "length": 12,
-      "value": "\"image_addr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7237,
-      "length": 12,
-      "value": "\"image_size\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7274,
-      "length": 11,
-      "value": "\"code_file\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7115,
-      "length": 10,
-      "value": "\"debug_id\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7156,
-      "length": 14,
-      "value": "\"image_vmaddr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7199,
-      "length": 12,
-      "value": "\"image_addr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7237,
-      "length": 12,
-      "value": "\"image_size\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7274,
-      "length": 11,
-      "value": "\"code_file\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7464,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7509,
-      "length": 10,
-      "value": "\"debug_id\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7559,
-      "length": 11,
-      "value": "\"code_file\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7614,
-      "length": 12,
-      "value": "\"image_addr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7672,
-      "length": 14,
-      "value": "\"image_vmaddr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 7727,
-      "length": 12,
-      "value": "\"image_size\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 8052,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 8063,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 8196,
-      "length": 7,
-      "value": "\"cocoa\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 8911,
-      "length": 10,
-      "value": "\"contexts\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 8948,
-      "length": 11,
-      "value": "\"exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 8983,
-      "length": 10,
-      "value": "\"event_id\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 9019,
-      "length": 12,
-      "value": "\"debug_meta\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 9059,
-      "length": 9,
-      "value": "\"release\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 8911,
-      "length": 10,
-      "value": "\"contexts\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 8948,
-      "length": 11,
-      "value": "\"exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 8983,
-      "length": 10,
-      "value": "\"event_id\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 9019,
-      "length": 12,
-      "value": "\"debug_meta\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
-      "kind": "StringLiteral",
-      "offset": 9059,
-      "length": 9,
-      "value": "\"release\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 781,
       "length": 4,
       "value": "1234"
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 973,
-      "length": 7,
-      "value": "\"crash\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 1003,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 1132,
-      "length": 9,
-      "value": "\"threads\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 1369,
-      "length": 11,
-      "value": "\"diagnosis\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 1441,
-      "length": 16,
-      "value": "\"recrash_report\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 1479,
-      "length": 15,
-      "value": "\"binary_images\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 1542,
-      "length": 15,
-      "value": "\"binary_images\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Array",
-      "offset": 1598,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 1718,
-      "length": 6,
-      "value": "\"user\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 1747,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 1781,
-      "length": 18,
-      "value": "\"sentry_sdk_scope\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 2072,
-      "length": 9,
-      "value": "\"crashed\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2096,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2106,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 2298,
-      "length": 7,
-      "value": "\"cocoa\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 2386,
-      "length": 8,
-      "value": "\"report\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 2416,
-      "length": 11,
-      "value": "\"timestamp\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 2850,
-      "length": 8,
-      "value": "\"system\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 2979,
-      "length": 13,
-      "value": "\"environment\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 3169,
-      "length": 6,
-      "value": "\"tags\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 3201,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 3378,
-      "length": 7,
-      "value": "\"extra\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 3769,
-      "length": 7,
-      "value": "\"index\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 3827,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 3844,
-      "length": 16,
-      "value": "\"dispatch_queue\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 3909,
-      "length": 9,
-      "value": "\"crashed\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 3964,
-      "length": 16,
-      "value": "\"current_thread\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4033,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 4075,
-      "length": 11,
-      "value": "\"backtrace\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 4108,
-      "length": 10,
-      "value": "\"contents\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 4278,
-      "length": 11,
-      "value": "\"registers\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Array",
-      "offset": 4795,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 4989,
-      "length": 18,
-      "value": "\"instruction_addr\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5023,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5199,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 5660,
+      "offset": 1693,
       "length": 13,
       "value": "\"symbol_addr\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5689,
-      "length": 1,
-      "value": "0"
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 1731,
+      "length": 10,
+      "value": "\"filename\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 5733,
+      "offset": 1810,
+      "length": 8,
+      "value": "\"lineno\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 1847,
+      "length": 7,
+      "value": "\"colno\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 1904,
       "length": 12,
       "value": "\"image_addr\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5761,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 5796,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 5851,
-      "length": 13,
-      "value": "\"symbol_name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5900,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 6199,
-      "length": 7,
-      "value": "\"basic\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 6703,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 6852,
-      "length": 19,
-      "value": "\"application_stats\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 6894,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 6948,
-      "length": 16,
-      "value": "\"app_identifier\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 6973,
-      "length": 20,
-      "value": "\"CFBundleIdentifier\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7036,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7052,
-      "length": 10,
-      "value": "\"app_name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7071,
-      "length": 14,
-      "value": "\"CFBundleName\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7106,
-      "length": 21,
-      "value": "\"CFBundleDisplayName\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7148,
-      "length": 14,
-      "value": "\"CFBundleName\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7178,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7194,
-      "length": 13,
-      "value": "\"app_version\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7216,
-      "length": 28,
-      "value": "\"CFBundleShortVersionString\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7265,
-      "length": 28,
-      "value": "\"CFBundleShortVersionString\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7309,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7325,
-      "length": 11,
-      "value": "\"app_build\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7345,
-      "length": 17,
-      "value": "\"CFBundleVersion\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7383,
-      "length": 17,
-      "value": "\"CFBundleVersion\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7416,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7432,
-      "length": 16,
-      "value": "\"app_start_time\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7457,
-      "length": 16,
-      "value": "\"app_start_time\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7478,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7494,
-      "length": 17,
-      "value": "\"device_app_hash\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7520,
-      "length": 17,
-      "value": "\"device_app_hash\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7542,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7558,
-      "length": 8,
-      "value": "\"app_id\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7575,
-      "length": 10,
-      "value": "\"app_uuid\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7590,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7606,
-      "length": 15,
-      "value": "\"in_foreground\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7629,
-      "length": 27,
-      "value": "\"application_in_foreground\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7661,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7676,
-      "length": 26,
-      "value": "\"active_time_since_launch\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7710,
-      "length": 26,
-      "value": "\"active_time_since_launch\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7741,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7756,
-      "length": 30,
-      "value": "\"background_time_since_launch\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7794,
-      "length": 30,
-      "value": "\"background_time_since_launch\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7829,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7888,
-      "length": 8,
-      "value": "\"memory\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 7919,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7973,
-      "length": 8,
-      "value": "\"family\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 7983,
-      "length": 7,
-      "value": "\"Apple\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8004,
-      "length": 7,
-      "value": "\"model\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8020,
-      "length": 9,
-      "value": "\"machine\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8075,
-      "length": 10,
-      "value": "\"model_id\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8094,
-      "length": 7,
-      "value": "\"model\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8147,
-      "length": 6,
-      "value": "\"arch\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8162,
-      "length": 10,
-      "value": "\"cpu_arch\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8218,
-      "length": 11,
-      "value": "\"simulator\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8254,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8269,
-      "length": 13,
-      "value": "\"memory_size\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8288,
-      "length": 6,
-      "value": "\"size\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8356,
-      "length": 13,
-      "value": "\"free_memory\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8375,
-      "length": 6,
-      "value": "\"free\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8386,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8401,
-      "length": 15,
-      "value": "\"usable_memory\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8422,
-      "length": 8,
-      "value": "\"usable\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8435,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8450,
-      "length": 11,
-      "value": "\"boot_time\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8470,
-      "length": 11,
-      "value": "\"boot_time\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8486,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8502,
-      "length": 8,
-      "value": "\"locale\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8551,
-      "length": 11,
-      "value": "\"time_zone\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8571,
-      "length": 11,
-      "value": "\"time_zone\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8628,
-      "length": 8,
-      "value": "\"rooted\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8645,
-      "length": 12,
-      "value": "\"jailbroken\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8671,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8959,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 8974,
-      "length": 13,
-      "value": "\"system_name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9023,
-      "length": 9,
-      "value": "\"version\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9041,
-      "length": 16,
-      "value": "\"system_version\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9096,
-      "length": 7,
-      "value": "\"build\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9112,
-      "length": 12,
-      "value": "\"os_version\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9140,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9156,
-      "length": 16,
-      "value": "\"kernel_version\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9181,
-      "length": 16,
-      "value": "\"kernel_version\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9213,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9229,
-      "length": 12,
-      "value": "\"build_type\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9243,
-      "length": 9,
-      "value": "\"release\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9293,
-      "length": 5,
-      "value": "\"app\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9337,
-      "length": 8,
-      "value": "\"device\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9384,
-      "length": 4,
-      "value": "\"os\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9680,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9731,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 9850,
-      "length": 7,
-      "value": "\"arm64\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10257,
-      "length": 7,
-      "value": "\"error\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 10287,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10315,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10338,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10505,
-      "length": 13,
-      "value": "\"nsexception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10573,
-      "length": 15,
-      "value": "\"cpp_exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10618,
-      "length": 15,
-      "value": "\"cpp_exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10655,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10677,
-      "length": 5,
-      "value": "\"C++\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10712,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10736,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10778,
-      "length": 15,
-      "value": "\"C++ Exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10835,
-      "length": 20,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10843,
-      "length": 1,
-      "value": "\": \""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10854,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10871,
-      "length": 6,
-      "value": "\"mach\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10903,
-      "length": 6,
-      "value": "\"mach\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 10932,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10960,
-      "length": 38,
-      "value": "\"Exception \""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10975,
-      "length": 11,
-      "value": "\"exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10991,
-      "length": 3,
-      "value": "\"?\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 10995,
-      "length": 1,
-      "value": "\", \""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11017,
-      "length": 28,
-      "value": "\"Code \""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11027,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11038,
-      "length": 3,
-      "value": "\"?\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11042,
-      "length": 1,
-      "value": "\", \""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11064,
-      "length": 32,
-      "value": "\"Subcode \""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11077,
-      "length": 9,
-      "value": "\"subcode\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11091,
-      "length": 3,
-      "value": "\"?\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11095,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11138,
-      "length": 16,
-      "value": "\"exception_name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11170,
-      "length": 6,
-      "value": "\"Mach\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11239,
-      "length": 8,
-      "value": "\"signal\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11273,
-      "length": 8,
-      "value": "\"signal\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 11304,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11332,
-      "length": 56,
-      "value": "\"Signal \""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11344,
-      "length": 8,
-      "value": "\"signal\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11357,
-      "length": 3,
-      "value": "\"?\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11361,
-      "length": 1,
-      "value": "\", Code \""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11372,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11383,
-      "length": 3,
-      "value": "\"?\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11387,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11430,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11452,
-      "length": 8,
-      "value": "\"Signal\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11523,
-      "length": 6,
-      "value": "\"user\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11560,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11584,
-      "length": 15,
-      "value": "\"User-reported\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 11648,
-      "length": 3,
-      "value": "\":\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11664,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11731,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11768,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11828,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11927,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 12038,
-      "length": 15,
-      "value": "\"user_reported\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 12075,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 12097,
-      "length": 6,
-      "value": "\"user\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 12245,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 12269,
-      "length": 19,
-      "value": "\"Unknown Exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12864,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 12900,
-      "length": 13,
-      "value": "\" >\n\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 12912,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 13094,
-      "length": 13,
-      "value": "\"nsexception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 13130,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 13158,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 13198,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 13234,
-      "length": 13,
-      "value": "\"NSException\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 13270,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 13292,
-      "length": 13,
-      "value": "\"NSException\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 13715,
-      "length": 19,
-      "value": "\"notable_addresses\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 13757,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 13924,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 13946,
-      "length": 8,
-      "value": "\"string\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 13988,
-      "length": 7,
-      "value": "\"value\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 14047,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14060,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 14329,
-      "length": 5,
-      "value": "\" > \""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 14557,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 14587,
-      "length": 20,
-      "value": "\"libswiftCore.dylib\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14612,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 14658,
-      "length": 20,
-      "value": "\"crash_info_message\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 14700,
-      "length": 21,
-      "value": "\"crash_info_message2\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15062,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15095,
-      "length": 6,
-      "value": "\"mach\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15383,
-      "length": 6,
-      "value": "\"mach\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15470,
-      "length": 16,
-      "value": "\"exception_name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15509,
-      "length": 16,
-      "value": "\"exception_name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15541,
-      "length": 9,
-      "value": "\"Unknown\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15573,
-      "length": 11,
-      "value": "\"exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15607,
-      "length": 11,
-      "value": "\"exception\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15631,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15655,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15684,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15704,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15728,
-      "length": 11,
-      "value": "\"code_name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15762,
-      "length": 11,
-      "value": "\"code_name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15789,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15814,
-      "length": 9,
-      "value": "\"subcode\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 15846,
-      "length": 9,
-      "value": "\"subcode\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15871,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16122,
-      "length": 8,
-      "value": "\"signal\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16204,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16232,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16254,
-      "length": 9,
-      "value": "\"Unknown\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16286,
-      "length": 8,
-      "value": "\"number\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16316,
-      "length": 8,
-      "value": "\"signal\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16337,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16361,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16389,
-      "length": 6,
-      "value": "\"code\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16408,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16432,
-      "length": 11,
-      "value": "\"code_name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16465,
-      "length": 11,
-      "value": "\"code_name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16492,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16595,
-      "length": 9,
-      "value": "\"address\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16625,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 16654,
+      "offset": 1951,
       "length": 18,
-      "value": "\"relevant_address\""
+      "value": "\"instruction_addr\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 17084,
-      "length": 3,
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 2013,
+      "length": 8,
+      "value": "\"in_app\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 2048,
+      "length": 13,
+      "value": "\"stack_start\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "Array",
+      "offset": 2174,
+      "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 17091,
-      "length": 8,
-      "value": "\"images\""
+      "offset": 2880,
+      "length": 6,
+      "value": "\"main\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 17724,
-      "length": 12,
-      "value": "\"image_addr\""
+      "offset": 3540,
+      "length": 10,
+      "value": "\"ns_error\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17752,
-      "length": 1,
-      "value": "0"
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 3580,
+      "length": 16,
+      "value": "\"mach_exception\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 17894,
+      "offset": 4046,
+      "length": 11,
+      "value": "\"help_link\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 4619,
+      "length": 11,
+      "value": "\"thread_id\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 6850,
       "length": 7,
       "value": "\"macho\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 17934,
-      "length": 6,
-      "value": "\"uuid\""
+      "offset": 7115,
+      "length": 10,
+      "value": "\"debug_id\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 18067,
+      "offset": 7156,
       "length": 14,
       "value": "\"image_vmaddr\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18101,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 18198,
-      "length": 12,
-      "value": "\"image_size\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 18255,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 18405,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 18431,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 18679,
+      "offset": 7199,
       "length": 12,
       "value": "\"image_addr\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18707,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 18736,
+      "offset": 7237,
       "length": 12,
       "value": "\"image_size\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18764,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
       "kind": "StringLiteral",
-      "offset": 18928,
-      "length": 8,
-      "value": "\"0x%llx\""
+      "offset": 7274,
+      "length": 11,
+      "value": "\"code_file\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashConverter.swift",
-      "kind": "Dictionary",
-      "offset": 19128,
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 8052,
       "length": 3,
-      "value": "[]"
+      "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 8063,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 8196,
+      "length": 7,
+      "value": "\"cocoa\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 8911,
+      "length": 10,
+      "value": "\"contexts\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 8948,
+      "length": 11,
+      "value": "\"exception\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 8983,
+      "length": 10,
+      "value": "\"event_id\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 9019,
+      "length": 12,
+      "value": "\"debug_meta\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/Network\/Model\/HVCrashData.swift",
+      "kind": "StringLiteral",
+      "offset": 9059,
+      "length": 9,
+      "value": "\"release\""
+    },
+    {
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
       "kind": "BooleanLiteral",
       "offset": 617,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
       "kind": "BooleanLiteral",
       "offset": 668,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
+      "filePath": "\/Users\/admin\/iOS\/hvcrashguard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
       "kind": "StringLiteral",
       "offset": 813,
       "length": 25,
       "value": "\"com.hyperkyc.crashguard\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1584,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "StringLiteral",
-      "offset": 3260,
-      "length": 11,
-      "value": "\"isHVCrash\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3333,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3491,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "StringLiteral",
-      "offset": 3532,
-      "length": 41,
-      "value": "\"❌ HVCrash install failed – \""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "StringLiteral",
-      "offset": 3572,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "StringLiteral",
-      "offset": 4617,
-      "length": 6,
-      "value": "\"user\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "StringLiteral",
-      "offset": 4671,
-      "length": 11,
-      "value": "\"isHVCrash\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "StringLiteral",
-      "offset": 4732,
-      "length": 11,
-      "value": "\"isHVCrash\""
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4758,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/iOS\/HVCrashGuard\/HVCrashGuard\/Classes\/HVCrashReporter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4896,
-      "length": 5,
-      "value": "false"
     }
   ]
 }

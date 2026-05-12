@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HVCrashGuard'
-  s.version          = '1.0.1'
+  s.version          = '1.1.0'
 
   s.summary          = 'HyperVerge’s internal iOS crash-reporting framework.'
   s.description      = <<-DESC

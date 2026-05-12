@@ -1,13 +1,17 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 effective-4.1.50 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name HVCrashGuard
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-4.1.50 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name HVCrashGuard
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 @_exported import HVCrashGuard
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class APIService {
+  public static let shared: HVCrashGuard.APIService
+  @objc deinit
+}
 @frozen public struct CrashAnyCodable : Swift.Codable {
   public let value: Any
   public init<T>(_ value: T?)
@@ -158,8 +162,9 @@ extension HVCrashGuard.CrashAnyEncodable : Swift.Hashable {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class APIService {
-  public static let shared: HVCrashGuard.APIService
+@_hasMissingDesignatedInitializers public class CrashReportConverter {
+  public static func convert(dict report: [Swift.String : Any]) -> HVCrashGuard.SentryEvent?
+  final public let SentryCrashSCAsyncMarker: Swift.UInt
   @objc deinit
 }
 public enum SentryLevel : Swift.String, Swift.Codable {
@@ -281,14 +286,10 @@ public struct SentryEvent : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers public class CrashReportConverter {
-  public static func convert(dict report: [Swift.String : Any]) -> HVCrashGuard.SentryEvent?
-  final public let SentryCrashSCAsyncMarker: Swift.UInt
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @objc public class HVCrashReporter : ObjectiveC.NSObject {
   public static let shared: HVCrashGuard.HVCrashReporter
   @objc public func enableCrashReporting(userInfo: [Swift.String : Any])
+  @objc public func setTag(userInfo: [Swift.String : Any])
   @objc public func stopCrashRecording()
   @objc override dynamic public init()
   @objc deinit
