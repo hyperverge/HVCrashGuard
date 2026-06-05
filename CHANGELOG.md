@@ -1,4 +1,8 @@
 ## CHANGELOG
+### 1.2.0 *[5 Jun 2026]*
+- Enhancements
+    - Add `release` tag in Sentry dashboard
+    
 ### 1.1.0 *[12 May 2026]*
 - Enhancements
     - Exposed `setTag` method to add additional metadata
