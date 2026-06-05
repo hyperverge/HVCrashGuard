@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "HVCrashGuard",
-            url: "https://hvsdk.s3.ap-south-1.amazonaws.com/ios/release/hvcrashguard/2.0.0/HVCrashGuard-2.0.0-XCFramework.zip",
-            checksum: "dc6d0201c1490024336caa51023d9dc5e63b003958fa8b8ca46465d3d9452ddc"
+            url: "https://hvsdk.s3.ap-south-1.amazonaws.com/ios/release/hvcrashguard/2.1.0/HVCrashGuard-2.1.0-XCFramework.zip",
+            checksum: "375214887cf2b819f1d71c80050a999b87ab3a268418aa3769970aca25fe9f09"
         )
     ]
 )
